@@ -1,0 +1,48 @@
+
+@mixin content{
+        padding-left: 15px;
+        padding-right: 15px;
+         margin-right: auto;
+         margin-left: auto;
+         max-width: 1483px;
+         grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+         grid-template-rows: repeat(auto, 1fr);
+         position: relative;
+         align-items: center;
+         justify-content: space-between;
+        
+        
+       
+}
+@mixin content_1675{
+        padding-left: 15px;
+        padding-right: 15px;
+         margin-right: auto;
+         margin-left: auto;
+         max-width: 1705px;
+         justify-content: space-between;
+        
+        
+       
+}
+@mixin button{
+       padding: 13px 26px;
+       border-radius: 36px;
+       letter-spacing: 10px;
+       color:$light_yellow;
+       border: none;
+       background: #F5E6CA;
+
+       
+}
+
+@mixin button_corner{
+        padding: 22px 44px;
+        border: 2px solid black;
+        font-size: 20px;
+        border-radius: 43px 43px 43px 12px;
+        background: none;
+        color: $black;
+        background: balck;
+        cursor: pointer;
+}

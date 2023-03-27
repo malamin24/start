@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import "sass/color.scss";
+@import "sass/mixin.scss";
+
+h1{font-size: 64px; font-weight: bold;}
+h2{font-size: 24px;font-weight: bold;}
+h3{font-size: 20px; font-weight: bold;}
+p{font-size: 20px; font-weight: regular; color:$black; opacity:60%}
+
+h1{ span{color:$blue}}
+h4{ font-size: 80px; span{color:$blue}}
+
+.small_head{  margin: 10px 0; span{  @include button;  }}
+
+button{   @include button_corner;}
+.arrow{ padding: 30px; background: $white;  border-radius: 100%; color: $black;}
+.arrow:hover{background: $black; color: $white; cursor: pointer;}
+
+
+.container{
+    @include content;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+    overflow-x: hidden;
+}
+/*================ Header ==========*/
+.header{
+   width: 1513px;
+   margin-left: auto;
+   margin-right: auto;
+  justify-content: center;
+ 
+    
+    .container{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        padding: 31px;
+        border-radius: 62px;
+        box-shadow: 0px 19px 50px rgba(0, 0, 0, 0.08);
+        z-index: 2;
+         position: absolute;
+        align-items: center;
+        width: 93vw;
+        
+        
+    
+        
+
+           
+    .menu{
+    
+            li{
+                display: inline-block;
+                list-style: none;
+                margin: 0 35px;
+              
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: medium;
+                    color: $black;
+                    opacity: 60%;
+    
+                }
+                a:hover{
+                    opacity: 100%;
+                   
+                  
+            };
+        };
+       
+        }
+    
+     .right_side{
+      
+            display: flex;
+            gap: 22px;
+            
+            button{
+                padding: 17px 29px ;
+                border: 1px solid $boder;
+                background: none;
+              border-radius: 43px;
+              font-size: 18px;
+              font-weight: medium;
+            
+            }
+            button:hover{
+                background: $black;
+                cursor: pointer;
+                color: $white;
+            }
+        }
+       .toggole{
+      display: none;
+     position: absolute;
+      right: 12px;
+       }
+    }
+}
+/*================ Startup ==========*/
+.startup{
+   margin-top: 31px;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    height: 1041px;
+    row-gap: 80px;
+    column-gap: 20px;
+    
+    .text_side{
+        grid-column: auto/span 5; 
+       
+      
+          
+        p{
+         margin: 50px 0;  
+         max-width: 560px;       
+        }
+        .button_two{
+           column-gap: 20px;
+            button:hover{
+                background: $blue;
+                border: $blue;
+                color: $white; } 
+            }}
+    .right_side_img{
+        grid-column: auto/span 5; 
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+ 
+   
+        }
+    }}
+
+/*================ Features ==========*/
+.features{
+    @include content_1675;
+   background: $bg_1675 ;
+   text-align: center;
+   padding-top: 69px;
+   padding-bottom: 110px;
+   border-radius: 40px;
+    .container{
+    display: grid;
+    row-gap: 60px;
+    align-items: center;
+    align-items: end;
+    .Features_four{
+        grid-column: auto/span 2;
+        
+        h2{
+            margin: 19px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: regular;
+            color: $black;
+            opacity: 60%;
+        }
+       
+        
+    }
+   }
+
+}
+/*================ From Design ==========*/
+.from_design{
+    margin-top: 123px;
+    margin-bottom: 181px;
+.container{
+        display: grid;
+    .left_text_side{
+            grid-column: auto/span 6;
+       p{ text-align: justify;  }
+        }
+    .right_side_image{
+        grid-column: auto/span 6;
+      
+       img{
+        width: 100%;
+       }
+    }
+    }
+}
+/*================ From Design ==========*/
+.Testimonials{
+    @include content_1675;
+    background: $bg_1675 ;
+    text-align: center;
+    padding-top: 69px;
+    border-radius: 40px;
+    position: relative;
+    overflow-x: hidden;
+
+    .img_area{
+        display: flex;
+        justify-content: center;
+        h1{ margin-right: 30px;}
+        img{
+            margin-left: -30px
+        }
+             
+    }
+ 
+  
+    .container{
+       display: flex;
+       text-align: left;
+       padding: 79px 0px;
+        position: relative;
+        
+     
+      
+
+        .clients_1, .clients_2, .clients_3, .clients_4{
+            grid-column: span 6;
+            background: $white;
+            border-radius: 50px;
+            padding: 50px;
+            box-shadow: 0px 19px 50px rgba(0, 0, 0, 8%);
+            position: relative;
+            margin: 79px 30px;
+            p{
+                margin: 35px 0;
+              
+               
+            }
+        .clients_img{
+            display: flex;
+            column-gap: 30px;
+            align-items: center;
+            line-height: 35px;
+            span{
+                color: $black;
+                opacity: 80%;
+            }
+        }
+        }
+      
+    }
+    .button_area{
+       padding-bottom: 75px;
+       display: flex;
+      justify-content: center;
+
+}
+}
+/*================ Knowdge ==========*/
+.knowledge{
+    @include content_1675;
+    text-align: center;
+    padding-top: 131px;
+    padding-bottom: 117px;
+  
+    h1{
+        margin-bottom: 63px;;
+    }
+    .container{
+        display: grid;
+        gap: 20px;
+       
+        .three_cloumn{
+            grid-column: auto/span 3;
+            margin-bottom: 79px;
+            padding: 23px;
+            border-radius: 30px;
+            box-shadow: 0px 15px 35px rgb(0, 0, 0, 8%);
+            text-align: left;
+            img{
+                width: 100%;
+            }
+            h2{
+                margin-top: 23px;
+                line-height: 35px;
+                max-width: 276px;
+            }
+            .bottom{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                     }
+        }
+    }
+  .bottom_button{
+    
+    button:hover{
+        background: $black;
+        color:$white
+
+    }
+    
+  }
+
+}
+/*================ Fire Rocket ==========*/
+.fire_rocket{
+    @include content_1675;
+    background: $bg_1675;
+    margin-top: 20px;
+    border-radius: 40px;
+   
+    
+    .container{
+      display: grid;
+      padding: 30px 0;
+    .left_img{
+        grid-column: auto/span 6;
+        margin-top: -70px;
+       margin-left: -75px;
+            img{
+            width: 100%;
+            transform: rotateY(-158deg);
+            margin-top: -70px;
+        }
+        }
+        .right_text{
+        grid-column: auto/span 6;          
+            p{
+                margin: 30px 0,
+            }
+        
+            
+            button:hover{
+                background: $black;
+                color: $white;
+
+            }
+        }
+}
+}
+/*================ Hello Startup ==========*/
+.hello_startup{
+    padding-top: 191px;
+    padding-bottom: 111px;
+    border-radius: 40px;
+    .container{
+        display: flex;
+        gap: 80px;
+        .two_left{
+            grid-column: auto/span 6;
+            
+           h1{
+            margin: 35px 0 53px 0px;
+            display: flex;
+            align-items: center;
+            column-gap: 58px;
+            svg{
+                padding: 21px;
+                background: $blue;
+                border-radius: 100%;
+                color: $white;
+            }
+           }
+           .Social_media{
+            display: flex;
+            align-items: center;
+          
+            
+
+           }
+           
+           
+        }
+        .two_right{
+            grid-column: auto/span 6;
+            h2{
+                color: $black;
+                opacity: 40%;
+                margin-bottom: 50px;
+               }
+               .three_cloumns_area{
+                display: flex;
+                justify-content: space-between;
+                column-gap: 120px;
+                .three_clumns{
+                  li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        line-height: 53px;
+                        font-size: 24px;
+                        color: $black;
+                        opacity: 80%;
+                    }
+                   
+                  }
+                  li:hover a{
+                    opacity: 100%;
+                    font-weight: bold;
+                    
+                    }
+                }
+               }
+        }
+    }
+}
+/*================ Footer ==========*/
+.footer{
+   .container{
+    text-align: center;
+   padding: 45px 0;
+   border-top: 1px solid #DBDBE6;
+  
+   }
+}
+/*================ Common responsice ==========*/
+
+@media (max-width:1300px) {
+    button{ padding: 10px 15px; }
+    .header{.container{.toggole{right: 10px};}}
+   .startup{ padding-top: 150px; .container{ display: grid; height: auto;  .right_side_img{ img{width: 100%;}}} } 
+   .from_design{ margin-top: 10px; margin-bottom: 10px; .container{display: grid;}}
+   .hello_startup{ padding-top: 50px; padding-bottom: 50px; }
+   
+   .hello_startup{.container{ display: grid;  gap: 10px; .two_right{.three_cloumns_area{column-gap: 10px;}}}}
+   .knowledge{ padding-top: 50px; padding: 50px 0;  padding-bottom: 50px;.container{ display: grid; }   } 
+   }
+@media (max-width:1024px) {
+     
+       .header{.container{
+                
+                .menu{
+                    position: absolute;
+                    background: rgba(0, 0, 0, 0.87);
+                    top: 90px;
+                    height: 100vh;
+                    width:100vw;
+                    margin-left: -120%;
+                    transition: 0.5s;
+                    z-index: 5;
+                     li{
+                    display: list-item;
+                    padding: 20px;
+                    a{
+                       font-weight: bold;
+                       color:$white;
+                       opacity: 100%;
+                       font-size: 20px
+                    }
+                               
+                    };
+                    li:hover{
+                       background: $black;
+                    }
+                              
+                }
+                .right_side{
+                    display: none;
+                }
+                .toggole{
+                   display: block;
+                    cursor: pointer;
+                    right: 20px;
+                }
+              }} 
+   
+           }
+
+@media (max-width:640px) {
+    h1{ font-size: 40px; }
+    h4{ font-size: 40px; }
+    button{ padding: 5px 9px; font-size: 10px; border: 0.2px solid $black }
+    .arrow{padding: 10px;}
+   .header{.container{padding: 10px 10px;}}
+   .startup{.container{.right_side_img{ img{width: 80%;}}}}
+   .fire_rocket{.container{ .left_img{ margin-top: 0px;img{margin-top: 0px;}}}}
+   .footer{.container{padding: 10px 0;}}
+   .Testimonials{.img_area{align-items: center; img{ margin-left: -15px; width: 30px; height: 30px;}}}
+   }
+@media (max-width:500px) {
+       h3{font-size: 15px;}
+             
+       .small_head{ margin-bottom: 10px; span{padding: 5px; font-size: 8px; letter-spacing: 2px;}}
+       .hello_startup{.container{.two_left{h1{margin: 10px 0 10px 0; column-gap: 5px; svg{ padding: 8px;}}}
+       .two_right{h2{margin-bottom: 10px;} .three_cloumns_area{ .three_clumns {li a{font-size: 16px; line-height: 15px; }}}}}}
+   
+       .Testimonials{.container{ padding: 0px;  .clients_1, .clients_2, .clients_3, .clients_4{ padding: 10px;  border-radius: 10px;  p{margin: 10px 0; }.clients_img{ line-height: 15px;}} }
+       .button_area{  padding-bottom: 75px; display: flex; justify-content: center; }}
+       .startup{.container{.right_side_img{ margin-left: auto; margin-right: auto; img{width:  60%;}}}}
+    
+    }
+   
+     
+ 
+
+
